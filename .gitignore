@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+ 
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+ 
+# PyTorch model files
+*.pth
+*.pt
+saved_models/
+ 
+# Training outputs
+plots/
+ 
+# Jupyter
+.ipynb_checkpoints/
+ 
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# Environment variables
+.env
+ 
