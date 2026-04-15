@@ -11,7 +11,7 @@ class ReplayBuffer:
         self.deque.append((state, action , reward, next_state, done))
     
     def sample(self, batch_size):
-        batch = random.sample(self.deque, batch_size )
+        batch = random.sample(self.deque, batch_size)
         states, actions, rewards, next_states,dones = zip(*batch)
 
         states = torch.FloatTensor(states)
@@ -26,6 +26,6 @@ class ReplayBuffer:
         
         return states, actions, rewards, next_states, dones
     
-    
+
     def __len__(self):
         return len(self.deque)
