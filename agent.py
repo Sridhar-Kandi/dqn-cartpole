@@ -25,6 +25,7 @@ class DQNAgent:
         #Disables Training Behaviors: It turns off specific |
         #layers used only during training (like Dropout or Batch Normalization) 
         # that would otherwise add randomness to the output.
+        #for the current instance we dont need it, still good practice but add extra load
 
         self.loss_fn = nn.MSELoss()
 
