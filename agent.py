@@ -85,7 +85,9 @@ class DQNAgent:
 
         return q_values.max(1)[0].unsqueeze(1)
         
-        
+    def update_target_network(self):
+        self.target_net.load_state_dict(self.policy_net.state_dict())
+
 
 
 
